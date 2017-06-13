@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EventModelUpDown.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css" /> 
+	<script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script> 
+	<script type="text/javascript" src="../extjs/ext-all.js"></script> 
+
+	<script>
+		function a(a, b){Ext.MessageBox.alert("hello","Hello,World:" + a + ' and '+ b); }
+		
+		function  abc(eventObj, elRef) {
+				console.log('myDiv click Handler, source elment ID: ' + elRef.id);
+			}
+		
+		Ext.onReady(function(){
+				
+		
+				var myObservable = new Ext.util.Observable();
+				myObservable.addEvents('sayHello');
+				
+				myObservable.on('sayHello', a);
+				
+				//not taking effect?
+				//Ext.get('myDiv').on('sayHello', a);
+				
+				
+				myObservable.fireEvent('sayHello','a', 'b');
+				
+				
+				});
+		
+	</script>
+  </head>
+  
+  <body>
+	<div id="myDiv">
+		MyDiv Text <a href="#" id="myHref"> My Href </a>
+	</div>
+	
+	<br/>
+	
+	Event will bubble up from href link to prarent DIV
+	
+</body>
+</html>

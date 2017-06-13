@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>My JSP 'Event.jsp' starting page</title>
+
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+	
+	<link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css" /> 
+	<script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script> 
+	<script type="text/javascript" src="../extjs/ext-all.js"></script> 
+	
+	<script> 
+	
+	function a(){Ext.MessageBox.alert("hello","Hello,World"); }
+	
+	Ext.onReady(function() {
+	
+		//this log will show in the chrome/firefox developer tools console Tab
+		console.log('hello,world');
+		
+			var win = new Ext.Window({
+				title : "不能关闭的窗口",
+				height : 200,
+				width : 300,
+				listeners : {
+					"beforedestroy" : function(obj) {
+						alert("想关闭我，这是不可能的!");		
+						obj.show();		
+						return false;
+					}
+				}
+			});
+			win.show();
+		}); 
+	</script>
+
+  </head>
+  
+  <body>
+    <input id="btnAlert" type="button" value="alert框" />
+  </body>
+</html>

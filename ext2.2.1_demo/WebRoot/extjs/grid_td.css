@@ -1,0 +1,13 @@
+ /*显示竖线*/
+.x-grid3-cell-inner{
+    border-left: 1px solid #eceff6;
+}
+/*与表头对齐*/
+.x-grid3-row td, .x-grid3-summary-row td{
+    padding-left: 0px;
+}
+/*去掉行间空白*/
+.x-grid3-row {
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+}

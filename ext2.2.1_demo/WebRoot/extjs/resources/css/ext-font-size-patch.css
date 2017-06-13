@@ -1,0 +1,69 @@
+/* --------------- 修改 Ext CSS -------------- */
+/* Ext 0 */
+.x-window-footer {
+position: relative;
+top: 0;
+right: 0;
+}
+.x-toolbar SPAN {
+font-size: 12px;
+}
+.x-tab-strip SPAN.x-tab-strip-text, .x-tip .x-tip-body, .x-grid-empty {
+font-size: 12px;
+}
+.x-panel-header {
+font-size: 12px;
+}
+.x-tree-node {
+font-size: 12px;
+}
+.x-grid3-hd-row TD {
+font-size: 12px;
+}
+.x-grid3-row TD {
+font-size: 12px;
+LINE-HEIGHT: 18px;
+}
+.x-tip .x-tip-bd {
+font-size: 12px;
+}
+.x-tip h3{
+font-size: 12px;
+}
+.x-tip .x-tip-bd-inner{
+font-size:12px;
+}
+.x-panel-tl .x-panel-header, .x-panel-mc {
+font-size:12px;
+}
+.x-form-field {
+font-size:12px;
+}
+.x-small-editor .x-form-field {
+font-size : 12px;
+}
+.x-combo-list-item {
+font-size : 12px;;
+}
+.x-menu-list-item {
+font-size : 12px;
+}
+.x-window-tl .x-window-header {
+font-size : 12px;
+}
+.ext-ie .x-form-text {
+margin-top:1px;
+} /* the textField missing bottom line */
+.x-form-item {
+font-size : 12px;
+}
+.x-grid-group-hd DIV {
+font-size : 12px;
+}
+
+/*按钮字体大小*/
+.x-btn-text{
+font-size: 12px !important;
+}
+
+/* END */
